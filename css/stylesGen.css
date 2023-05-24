@@ -1,0 +1,234 @@
+body{
+     font-size: 1rem;
+     line-height: 1.5;
+     overflow-x: hidden; 
+     /*OVERFLOW X - PARA OCULTAR LA BARRA ESPACIADORA - ABAJO*/  
+}
+
+header{
+  border: 1px solid black;
+  width: 100%;
+  margin:  auto;
+  position: fixed;
+  background: #ccc;
+  z-index: 100;
+  
+}
+
+/*navegacion*/
+
+nav{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  padding: 20px 0;
+  
+  
+}
+
+.logo{
+  
+  width: 30px; 
+  margin: 0 0 0 32%  ; 
+}
+
+li .items-nav{
+  color: #000;
+  text-decoration:dotted;
+  list-style: none;
+  padding: 10px;
+
+}
+
+/*ESTILIZANDO NAV*/
+
+nav > ul{  
+  display: flex;
+  
+}
+
+nav ul.nav-menu{
+  flex: 1;
+  margin-left: 2% ;
+
+}
+
+/* VIDEO BACK*/
+
+.container-uno{
+  border: 1px solid black;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  
+
+}
+
+.content{
+  max-width: 70rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  border: 3px solid orange;
+  margin: auto;
+  text-align: left;
+  
+}
+
+.ejemplo-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+
+.container-uno video{
+  min-width: 100%;
+  min-height: 100%;
+  border: 2px solid green ;
+}
+
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: .60;
+}
+
+.container-flex{
+  z-index: 2;
+  margin-top: 15% ;
+  width: 100%;
+  padding: 3% 5%;
+  display: flex;
+  align-items: center;
+  gap:10%;
+}
+
+.contenido-escrito{
+  z-index: 2;
+  padding: 0 1%;
+  width: 100%;
+  display: block;
+}
+
+
+.container-uno h1{
+  
+  font-size: 25px;
+  margin: 15% auto ;
+  padding:10px 90px ;
+  background-color: rgba(0, 0, 0, 0.453);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+
+.boton{
+  padding: auto ;
+  display: block;
+  width: 80%;
+}
+
+
+.container-uno P{
+  font-size: 1.5rem; 
+  color: gray;
+  
+
+}
+
+.btn1{
+  background: #ee2b2b;
+  color: #fff;
+  font-size: 35px;  
+  text-decoration: none;
+  margin-top: 50% ;
+  border-radius: 10px;
+  
+}
+
+
+
+.boton .btn1{
+  
+  padding: 2px 2px ;
+  margin: 20px 5px;
+  display: block;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+
+.img-base{
+  width: 80%;
+  padding: 0 0 10% 15%;
+  
+}
+
+
+
+/* GALERIA DE IMAGENES*/
+.galeria{
+  position:static;
+  display: block;
+  border: 1px solid red;
+  padding: 20% 1px;
+  margin: 0 2% 0 2%;
+  background-color: #6d6b6b;
+  align-items:center;
+}
+
+.granformato{
+  width: 95.6%;
+  height: 30%;
+  position: absolute;
+  border: 1px solid green;
+}
+
+
+.container-dos{
+  display: flex;
+  background-color: #929292;
+  margin: 0 2% 0 2%;
+  padding: 5% 1px;
+  border: 1px solid blue;
+  align-items:center;
+
+}
+
+.galeria-imagenes-flex{
+  display: flex;
+  background-color: #6d6b6b;
+  
+  margin: 0 2% 0 2%;
+  padding: 15% 1px;
+  border: 1px solid orangered;
+  align-items:center;
+}
+
+.informacion-redes{
+  display: flex;
+  background-color: #363636;
+  margin: 0 2% 0 2%;
+  padding: 10% 1px;
+  border: 1px solid blue;
+  align-items:center;
+}
+
+footer{
+  display: flex;
+  background-color: #929292;
+  margin: 0 2% 0 2%;
+  padding: 5% 1px;
+  border: 1px solid blue;
+  align-items:center;
+}
