@@ -10,28 +10,36 @@ header{
   width: 100%;
   margin:  auto;
   position: fixed;
-  background: #ccc;
-  z-index: 100;
+  background: #303952;
+  top: 0;
+  z-index: 80;
+  transition: ease-in-out 0.6s ;
   
 }
 
 /*navegacion*/
 
 nav{
+  
   font-size: 20px;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items:center ;
-  padding: 20px 0;
-  
+  padding: 10px ;
+  height: 50px;
+  width: 82%;
   
 }
 
-.logo{
-  
-  width: 30px; 
-  margin: 0 0 0 32%  ; 
+nav .logo {
+  width: 45px;
+   padding-left: 20% ; 
 }
+
+header .nav-menu{
+  justify-content: right;
+}
+
 
 li .items-nav{
   color: #000;
@@ -61,8 +69,8 @@ nav ul.nav-menu{
 nav li{
   display: inline;
   margin: 0 0 0 15px ;
-  padding: 10px 20px;
-  background-color: orange;
+  padding: 5px 5px;
+  background-color: rgb(146, 146, 146);
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;    
@@ -70,7 +78,7 @@ nav li{
 
 nav a{
   text-transform: uppercase;
-  color: #000;
+  color: white;
   font-weight: bold;
   font-size: 18px ;
   text-decoration: none;
@@ -84,7 +92,7 @@ nav a:hover{
 }
 
 nav li:hover{
-  background: rgb(255, 218, 7);
+  background: #ee2b2b;
   transform: scale(1.1);
 }
 
@@ -147,7 +155,7 @@ nav li:hover{
   padding: 3% 5%;
   display: flex;
   align-items: center;
-  gap:10%;
+  gap:5%;
 }
 
 .contenido-escrito{
@@ -158,12 +166,12 @@ nav li:hover{
 }
 
 
-.container-uno h1{
+.contenido-escrito h1{ 
   
   font-size: 25px;
-  margin: 15% auto ;
-  padding:10px 90px ;
-  background-color: rgba(0, 0, 0, 0.453);
+  margin: 10% auto ;
+  padding:15px 10px ;
+  background-color: rgba(0, 0, 0, 0.295);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
