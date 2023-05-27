@@ -1,5 +1,25 @@
 
 
+
+var swiper = new Swiper(".mySwiper",{
+    effect: "coverflow",
+    grabCursor: true ,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect:{
+        rotate:10,
+        strech:0,
+        depth:300,
+        modifier:2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay:true,
+
+});
+
+
+
 /*AOS INICIALIZACION*/
 
    /* AOS.init();*/
@@ -64,3 +84,9 @@ document.querySelectorAll(".hamburger ")[0].addEventListener("click", function()
     enlacesHeader.classList.toggle("menudos")
 })
 */
+
+
+
+// JS SWIPER- GALERIA
+
+

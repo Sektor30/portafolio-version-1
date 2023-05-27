@@ -12,10 +12,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>portafoliO-diseños-ilustraciones</title>
+    <!--SWIPER JS - CARROUSUEL-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>   
+    
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <title>portafoliO-diseños-ilustraciones</title>
     
     <style>
-   
+                        .container{
+                         /*
+                        position:static;
+                        display: block;
+                        border: 1px solid red;
+                        justify-content: space-between;
+                        width: 100%;
+                        max-width: 2000px; 
+                        overflow: hidden;
+                        margin: 20px auto;
+
+                        padding: 10% 0;
+                        background-color: #6d6b6b;
+                        */
+                        max-width:100%;
+                        margin: 8rem auto 0 8px ;
+                        width: 100%;
+                        background-color: #4d4d4d;
+                        
+                        
+                        }
+
+                        main{
+                            border: 1px solid red;
+                            background-color: gray;
+                        }
+
+                        .movies{
+                            padding: 10px 0 20px 0;
+                            width: 100% ;  
+                            
+                            
+                        }
+
+                        .swiper{
+                            width: 100%;
+                            
+                            
+                        }   
+                        
+                        .swiper-slide {
+                            background-position: center;
+                            background-size: cover;
+                            width: 400px;
+                            
+                            
+                        }
+                        
+                        .swiper-slide img{
+                            display: block;
+                            width: 100%;
+                            
+                        }
+
+                      
+
+
+                        @media(max-width:1920px){
+
+
+                            body{
+                                min-height: 0vh;
+                            }
+
+                            .container{
+                                
+                                padding: 80px 0;
+                                width: 95%;
+                                align-items: center;
+                            }
+
+                            .movies{
+                                padding: 30px;
+                                
+                            }
+
+                            .swiper{
+                            width: 70%;
+                            
+                        }  
+
+                        }
+
+
     </style>
 
 </head>
@@ -46,7 +135,7 @@
         <main>
                 <div class="container-uno content">
                     <div class="ejemplo-video">
-                        <video src="../recursos/vid/reel2020.mp4" autoplay loop> </video>
+                        <video src="./recursos/vid/reel2020.mp4" autoplay loop> </video>
                     </div>
 
                             <div class="overlay"></div>
@@ -78,8 +167,47 @@
 
                 </div>
 
-                <section class="galeria">
-                    <img class="granformato" src="" alt="">
+                <section class="movies container">
+                    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class= "swiper-slide">
+                                <img src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_1280.jpg" 
+                                alt="imagen-swiper">
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"></a> <img src="./recursos/img/space002.png" 
+                                alt="imagen-swiper">
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
+                                alt="imagen-swiper"> </a>
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
+                                alt="imagen-swiper"> </a>
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
+                                alt="imagen-swiper"> </a>
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
+                                alt="imagen-swiper"> </a>
+                            </div>
+                            <div class= "swiper-slide">
+                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
+                                alt="imagen-swiper"> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+               
+
+                <div class="container-dos">
 
                     <div class="listaimg">
                         <!--ul>li*5>a[href="#"]{Elemento $}-->
@@ -90,12 +218,10 @@
                             <li><a href="#">Elemento 4</a></li>
                             <li><a href="#">Elemento 5</a></li>
                         </ul>
-
+    
                     </div>
 
-                </section>
 
-                <div class="container-dos">
                     <div class="listas"></div>
                     <div class="imagen-enlace"></div>
                 </div>
@@ -115,9 +241,15 @@
             <footer>
 
             </footer>
-    
+
+            
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+                <script src="./js/main.js"></script>
+            
+
+
     </body>
 
-    <script src="./js/main.js"></script>
 
 </html>
