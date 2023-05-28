@@ -1,24 +1,38 @@
 
-
-
-var swiper = new Swiper(".mySwiper",{
-    effect: "coverflow",
-    grabCursor: true ,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect:{
-        rotate:10,
-        strech:0,
-        depth:300,
-        modifier:2,
-        slideShadows: true,
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    freeMode: true,
+    slideShadows: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
     loop:true,
     autoplay:true,
+    
+  });
 
-});
-
-
+/*ANTIGUO SWIMPER*/
+/*
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth:0,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },loop:true,
+    autoplay:true,
+})
+*/
 
 /*AOS INICIALIZACION*/
 

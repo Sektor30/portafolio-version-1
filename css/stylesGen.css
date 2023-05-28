@@ -224,12 +224,22 @@ nav li:hover{
 }
 
 
+.container-swim{
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin: 10%  10% auto ;
+  padding: 10px auto;
+
+}
 
 /* GALERIA DE IMAGENES*/
 
+/*SWIPER J*/
 
 
 
+/*CIERRE SWIPER*/
 
 .granformato{
   width: 99%;
@@ -242,7 +252,6 @@ nav li:hover{
 
 .container-dos{
   display: flex;
-  background-color: #929292;
   margin: 0 2% 0 2%;
   padding: 3% 2%;
   border: 1px solid blue;
@@ -250,15 +259,88 @@ nav li:hover{
 
 }
 
-.galeria-imagenes-flex{
-  display: flex;
-  background-color: #6d6b6b;
+
+/* container ejemplo*/
+
+.container2{
+  /*background: #fff;*/
+  /*   background-color: #ccc; */  
+  padding: 0.6%  0% 0.6% 5%;
+  background: rgb(21, 14, 61) ;
   
-  margin: 0 2% 0 2%;
-  padding: 15% 1px;
-  border: 1px solid orangered;
-  align-items:center;
 }
+
+
+.mapa{
+      margin-bottom: 20px ;
+      /*width: calc(50% - (10px*2));*/
+      width: 300px;
+      /* box-shadow: -10px 10px 20px 15px #000;*/
+              
+
+}
+
+.mapa:hover{
+  opacity: 30%;
+  transition: 400ms;
+}
+
+
+
+.tituloZurdo{
+  padding-left: 3%;
+  text-align: center;
+  margin: 50px auto;
+  letter-spacing: 60px;
+  
+}
+
+.tituloZurdo::first-line{
+  font-weight: bolder;
+}
+
+
+
+
+.items{
+  font-size: 120%;
+  padding: 15px 0 5px 10px;
+  /* font-weight: bold;*/
+  background-color: #ffb01d ;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 15px 0 15px 40%;
+  
+  
+  
+}
+
+.items a{
+  text-decoration: none;
+  color:black;
+  margin: 20px auto;
+      
+  
+}
+
+.items:nth-child(2n){
+  font-weight: bold;
+}
+
+
+.laterales {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-right: 4% ;
+      
+}
+
+/* cierre container ejemplo*/
+
+
 
 .informacion-redes{
   display: flex;

@@ -13,99 +13,59 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!--SWIPER JS - CARROUSUEL-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>    
     
     <!--fontawsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-        <title>portafoliO-diseños-ilustraciones</title>
+        <title>portafolio-diseños-ilustraciones</title>
     
-    <style>
-                        .container{
-                         /*
-                        position:static;
-                        display: block;
-                        border: 1px solid red;
-                        justify-content: space-between;
-                        width: 100%;
-                        max-width: 2000px; 
-                        overflow: hidden;
-                        margin: 20px auto;
+        <style>
+  
+  
+body .container-swim{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    
+}
 
-                        padding: 10% 0;
-                        background-color: #6d6b6b;
-                        */
-                        max-width:100%;
-                        margin: 8rem auto 0 8px ;
-                        width: 100%;
-                        background-color: #4d4d4d;
-                        
-                        
-                        }
+ main{
+     
+     background-color: rgb(21, 14, 61);
+ }
 
-                        main{
-                            border: 1px solid red;
-                            background-color: gray;
-                        }
+ .swiper {
+      width: 60%;
+      height: 100%;
+      margin: 200px auto 10px auto;
+    }
 
-                        .movies{
-                            padding: 10px 0 20px 0;
-                            width: 100% ;  
-                            
-                            
-                        }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #ffffff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
 
-                        .swiper{
-                            width: 100%;
-                            
-                            
-                        }   
-                        
-                        .swiper-slide {
-                            background-position: center;
-                            background-size: cover;
-                            width: 400px;
-                            
-                            
-                        }
-                        
-                        .swiper-slide img{
-                            display: block;
-                            width: 100%;
-                            
-                        }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 1em;
 
-                      
+      object-fit: cover;
+    }
 
+    .swiper-slide a{
+        
+    }
 
-                        @media(max-width:1920px){
-
-
-                            body{
-                                min-height: 0vh;
-                            }
-
-                            .container{
-                                
-                                padding: 80px 0;
-                                width: 95%;
-                                align-items: center;
-                            }
-
-                            .movies{
-                                padding: 30px;
-                                
-                            }
-
-                            .swiper{
-                            width: 70%;
-                            
-                        }  
-
-                        }
-
-
-    </style>
+   </style>
 
 </head>
     <body>
@@ -158,76 +118,51 @@
                                                 alt="imagen-seccion-inicio">
                                                 <a href="#"  class="btn1">Descubre</a>
                                         </div>
-                            
-                            
                                 </div>
-
-                    
                             </div>
-
                 </div>
+   
+<!--SWIMPER-->
 
-                <section class="movies container">
-                    
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <a href=""><img src="./recursos/icons/LOGO VECTOR1 .png" alt=""  class="imgtohover"></a> </div>
+      <div class="swiper-slide">  <a href=""> <img src="https://cdn.pixabay.com/photo/2017/04/23/19/30/earth-2254769_1280.jpg" alt="" class="imgtohover"> </a>  </div>
+      <div class="swiper-slide">  <a href=""> <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg" alt="" class="imgtohover"></a>  </div>
+      <div class="swiper-slide"> <a href=""> <img src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg" alt="" class="imgtohover"></a> </div>
+      <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_1280.jpg " alt="" class="imgtohover"></a> </div>
+      <div class="swiper-slide"><img src=" " alt=""></div>
+      <div class="swiper-slide"><img src=" " alt=""></div>
+      <div class="swiper-slide"><img src=" " alt=""></div>
+      <div class="swiper-slide"><img src=" " alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-                            <div class= "swiper-slide">
-                                <img src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_1280.jpg" 
-                                alt="imagen-swiper">
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"></a> <img src="./recursos/img/space002.png" 
-                                alt="imagen-swiper">
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
-                                alt="imagen-swiper"> </a>
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
-                                alt="imagen-swiper"> </a>
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
-                                alt="imagen-swiper"> </a>
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
-                                alt="imagen-swiper"> </a>
-                            </div>
-                            <div class= "swiper-slide">
-                               <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png"  
-                                alt="imagen-swiper"> </a>
-                            </div>
-                        </div>
-                    </div>
 
-                </section>
 
-               
-
-                <div class="container-dos">
-
-                    <div class="listaimg">
-                        <!--ul>li*5>a[href="#"]{Elemento $}-->
-                        <ul class="lista">
-                            <li><a href="#">Elemento 1</a></li>
-                            <li><a href="#">Elemento 2</a></li>
-                            <li><a href="#">Elemento 3</a></li>
-                            <li><a href="#">Elemento 4</a></li>
-                            <li><a href="#">Elemento 5</a></li>
+                <section class="container2">
+                    <h3 class="tituloZurdo"><strong> </strong></h3>
+                    <div class="contenido-opciones">
+                        <ul class="laterales">
+                            <li class="items"><a href="#">Historia</a></li> 
+                            <li class="items"><a href="./info.html">Información</a>   </li> 
+                            <li class="items"><a href="./info.html">Comunidad</a>   </li> 
+                            <li class="items"><a href="./info.html">Actividades</a>   </li> 
                         </ul>
-    
+                
+                        <img src="./recursos/img/space002.png" class="mapa">
                     </div>
+                            
+                </section>
+                    
+                        <!--ul>li*5>a[href="#"]{Elemento $}-->
+                        
 
 
-                    <div class="listas"></div>
-                    <div class="imagen-enlace"></div>
-                </div>
+            
 
 
-                <div class="galeria-imagenes-flex"></div>
 
                 <div class="informacion-redes">
                     <div class="redes"></div>
