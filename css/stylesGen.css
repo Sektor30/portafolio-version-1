@@ -173,12 +173,52 @@ nav li:hover{
 .contenido-escrito h1{ 
   
   font-size: 25px;
-  margin: 10% auto ;
-  padding:15px 10px ;
-  background-color: rgba(0, 0, 0, 0.295);
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+ margin: 10% auto ;
+ padding:15px 5px ;
+ position: relative;
+ font-family: 'Montserrat', sans-serif;
+ color: rgba(236, 236, 236, 0.384);
+ animation:backwards  mimove 4s;
 }
+
+
+.contenido-escrito :hover {
+  color: orange;
+  background-color: rgb(221, 221, 221);
+
+}
+
+
+.contenido-escrito > .items  {  
+background-color: rgba(255, 255, 255, 0.014);
+animation:backwards  mimove 3s;
+}
+
+.contenido-escrito > .items + .dos {  
+  background-color: rgba(255, 255, 255, 0.014);
+  animation:backwards  mimove 3s;
+  
+  }
+
+.contenido-escrito > .items + .tres {  
+    background-color: rgba(255, 255, 255, 0.014);
+    animation:backwards mimove 3s;
+    
+    }
+
+.contenido-escrito > .items + .cuatro {  
+      background-color: rgba(255, 255, 255, 0.014);
+      animation:backwards  mimove 3s;
+      }
+
+
+@keyframes mimove{
+ 
+  0%   {top: 0px; left: -250px; background:#ccc;color: #fafafa;}
+  25%   {top: 0px; left: 50px; background:#ccc;color: #fafafa;}
+  75% {top: 0px; left: 0px; background:rgba(255, 255, 255, 0.014);color: #ffffff;}
+}
+
 
 
 .boton{
@@ -220,8 +260,16 @@ nav li:hover{
 .img-base{
   width: 80%;
   padding: 0 0 10% 15%;
-  
-}
+  animation: ease-in animat 2s; 
+ }
+ 
+ @keyframes animat{
+   0%{
+       transform: scale(0);
+   }100%{
+       transform: scale(1);
+   }
+ }
 
 
 .container-swim{
@@ -245,7 +293,7 @@ nav li:hover{
   width: 99%;
   height: 30%;
   position: absolute;
-  border: 2px solid green;
+  
 }
 
 
@@ -265,11 +313,17 @@ nav li:hover{
 .container2{
   /*background: #fff;*/
   /*   background-color: #ccc; */  
-  padding: 0.6%  0% 0.6% 5%;
+  padding: 0.6%  7% 0.6% 8%;
   background: rgb(21, 14, 61) ;
   
 }
 
+.contenido-opciones{
+  
+  display: flex;
+  flex-wrap: wrap;  
+  margin: 0 auto;
+}
 
 .mapa{
       margin-bottom: 20px ;
@@ -288,7 +342,7 @@ nav li:hover{
 
 
 .tituloZurdo{
-  padding-left: 3%;
+  
   text-align: center;
   margin: 50px auto;
   letter-spacing: 60px;
@@ -302,26 +356,27 @@ nav li:hover{
 
 
 
-.items{
+ul .items {
   font-size: 120%;
   padding: 15px 0 5px 10px;
   /* font-weight: bold;*/
-  background-color: #ffb01d ;
+  background-color: #ececec09 ;
   border: none;
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;
-  margin: 15px 0 15px 40%;
+  margin: 15px 40px;
+  
   
   
   
 }
 
-.items a{
+.items p{
   text-decoration: none;
-  color:black;
-  margin: 20px auto;
-      
+  color:white;
+  margin: 30px 100px;
+  overflow: auto;
   
 }
 
@@ -333,8 +388,9 @@ nav li:hover{
 .laterales {
   display: inline-block;
   vertical-align: top;
-  width: 50%;
-  margin-right: 4% ;
+  width: 40%;
+  padding: 20px 140px;
+  margin-right: 1%;
       
 }
 
@@ -343,19 +399,90 @@ nav li:hover{
 
 
 .informacion-redes{
-  display: flex;
-  background-color: #363636;
-  margin: 0 2% 0 2%;
-  padding: 10% 1px;
-  border: 1px solid blue;
-  align-items:center;
+   
 }
 
+
+
+/* FOOTER*/
 footer{
+  background: rgba(32, 0, 119, 0.452) ;
+  padding: 30px 0;
+  overflow: hidden;
   display: flex;
-  background-color: #929292;
-  margin: 0 2% 0 2%;
-  padding: 5% 1px;
-  border: 1px solid blue;
-  align-items:center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+
+
+} 
+
+.partFooter{
+  width: 20%;
+  text-align: center;
+}
+
+.partFooter h4{
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  
+  
+}
+
+.partFooter a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  transition: color .05s ease-in-out;
+  margin-bottom: 10px; 
+
+}
+
+.partFooter a:hover{
+  color:#c23c55 ;
+
+}
+
+
+
+.partFooter img{
+  
+  width: 55%;
+
+}
+
+.social-media a{
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+
+
+.social-media i{
+  font-size: 25px;
+  
+  color: black;
+  border: 1px solid #030304 ;
+  border-radius: 50px;
+  width: 38px;
+  height: 38px;
+  /*--------CENTRAR BORDE - REDOMDO DE LOS ICONOS DE LAS REDES-------*/
+  line-height: 36px;
+  cursor: pointer;
+  margin-top: 20px;
+ 
+  transition: all ease-in-out .2s;
+  margin-right: 5px;    
+}
+
+.social-media i:hover {
+  color: #fff;
+  background-color: #c23c55;
+  border-color: #ed1f11;;
+
 }
