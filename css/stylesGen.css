@@ -6,6 +6,11 @@ body{
      /*OVERFLOW X - PARA OCULTAR LA BARRA ESPACIADORA - ABAJO*/  
 }
 
+main{
+   
+  background-color: rgb(21, 14, 61);
+  ;
+}
 
 
 header{
@@ -105,7 +110,6 @@ nav li:hover{
 /* VIDEO BACK*/
 
 .container-uno{
-  border: 1px solid black;
   display: flex;
   height: 80vh;
   align-items: center;
@@ -117,7 +121,6 @@ nav li:hover{
   max-width: 60rem;
   padding-left:1rem;
   padding-right:1rem;
-  border: 3px solid orange;
   margin: 0 auto;
   text-align: left;
   
@@ -128,7 +131,7 @@ nav li:hover{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 99vh;
   overflow: hidden;
   
 }
@@ -147,7 +150,7 @@ nav li:hover{
   top: 0;
   left: 0;
   /* background: #303952;*/
-  background: #000;
+  background: #000000f1;
   z-index: 1;
   opacity: .30;
 }
@@ -272,22 +275,71 @@ animation:backwards  mimove 3s;
  }
 
 
-.container-swim{
+.cuadro{
   display: flex;
   justify-content: center;
   position: static;
-  margin: 10%  10% auto ;
+  margin: 1% auto ;
   padding: 10px auto;
-
+  
 }
 
 /* GALERIA DE IMAGENES*/
 
 /*SWIPER J*/
 
+body .container-swim{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  
+}
+
+
+.swiper {
+    width: 60%;
+    height: 100%;
+    margin: 200px auto 10px auto;
+    
+  }
+
+  .swiper-wrapper{
+    border:2px solid green;  
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    background: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+
+    object-fit: cover;
+  }
+
+  /*
+  .swiper-slide a{
+      
+  }
+*/
 
 
 /*CIERRE SWIPER*/
+
+
+
 
 .granformato{
   width: 99%;
@@ -313,7 +365,7 @@ animation:backwards  mimove 3s;
 .container2{
   /*background: #fff;*/
   /*   background-color: #ccc; */  
-  padding: 0.6%  7% 0.6% 8%;
+  padding: 0 auto;
   background: rgb(21, 14, 61) ;
   
 }
@@ -333,6 +385,8 @@ animation:backwards  mimove 3s;
               
 
 }
+
+
 
 .mapa:hover{
   opacity: 30%;
@@ -362,7 +416,7 @@ ul .items {
   /* font-weight: bold;*/
   background-color: #ececec09 ;
   border: none;
-  border-radius: 5px;
+  border-radius: 19px;
   transition: 1s all;
   cursor: pointer;
   margin: 15px 40px;
@@ -375,7 +429,7 @@ ul .items {
 .items p{
   text-decoration: none;
   color:white;
-  margin: 30px 100px;
+  margin: 30px 20px;
   overflow: auto;
   
 }
@@ -394,12 +448,72 @@ ul .items {
       
 }
 
+
+.laterales-parrafo {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  padding: 20px 140px;
+  margin-right: 1%;
+      
+}
+
+.items-par{
+  font-size: 120%;
+  padding: 15px 0 5px 10px;
+  /* font-weight: bold;*/
+  background-color: #ececec09 ;
+  border: none;
+  border-radius: 19px;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 15px 40px;
+
+}
+
+.items-par p{
+  text-decoration: none;
+  color:white;
+  margin: 30px 20px;
+  overflow: auto;
+  font-size: 22px;
+}
+
+
 /* cierre container ejemplo*/
+
+.container3{
+  /*background: #fff;*/
+  /*   background-color: #ccc; */  
+  padding: 0.6%  7% 0.6% 8%;
+  background: rgba(255, 255, 255, 0.062) ;
+  margin: 40px 60px;
+  display: flex;
+  border-radius: 30px;
+}
+
+
+.twitter-timeline{
+  padding: 2px 1px ;
+  /*width: calc(50% - (10px*2));*/
+  width: 370px;
+  height: 350px;
+  overflow: auto;
+}
 
 
 
 .informacion-redes{
-   
+  border: 1px solid rgba(245, 222, 179, 0);
+    padding: 30px 0 ;
+}
+
+.lateral-twitter{
+  display: flex;
+  vertical-align: top;
+  width: 40%;
+  padding: 30px 80px;
+  
 }
 
 
@@ -484,5 +598,129 @@ footer{
   color: #fff;
   background-color: #c23c55;
   border-color: #ed1f11;;
+
+}
+
+
+/*MEDIA*/
+
+
+@media screen and  (max-width:1200px){
+ 
+ 
+  .container-uno, .container2, .ejemplo-video, .overlay {
+    width: 100%;
+    margin: auto 2px;
+}
+
+.content{
+  max-width: 70%;  
+}
+
+.ejemplo-video{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+
+video{
+  width: 140vh;
+  height: 20vh;
+  transform: scale(1.4,1.4)translate(-379px, 10px);
+  
+}
+.container-uno{
+  border: 5px solid green;
+  padding: 10% auto 0 auto;
+  margin: 10% auto 0 auto;
+}
+
+
+.container-flex{
+  
+  display: flex;
+  flex-direction: column; 
+}
+
+.contenido-escrito{
+  top: 10%;
+  width: 100%;
+  padding: 0px auto;
+  margin: 2% auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contenido-escrito h1{
+  font-size: 25px;
+  margin: 2% auto ;
+  padding:2% 5px ;
+  
+}
+
+.img-promocional img{
+  
+  width: 0;
+  margin: 6px auto;
+}
+
+
+.btn1{
+  width: 80%;
+  margin: 2px auto;
+  margin-bottom: 20%;
+}
+
+.img-promocional{  
+  margin: 2px auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/*comienza swiper*/
+
+
+
+
+.swiper{
+  width: 80%;
+  height: 80%;
+  margin: 120px auto 5px auto;
+}
+
+.swiper-wrapper{
+  border: 3px solid red;
+  margin: 0px auto;
+}
+
+.cuadro{
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin: 20% auto ;
+  padding: 10px auto;
+  
+}
+
+.twitter-timeline{
+  display: flex;
+  max-width: 60%;
+  margin-top: 0px;
+  margin-bottom: 55px;
+}
+
+}
+
+
+@media screen and  (max-width:500px){
+ 
+  .twitter-timeline{
+    width: 180px;
 
 }
