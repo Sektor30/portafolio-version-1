@@ -15,10 +15,13 @@
     <!--SWIPER JS - CARROUSUEL-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>    
     
-    
-
     <!--fontawsome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--AOS STYLE-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
         <title>portafolio-diseños</title>
     
@@ -34,22 +37,26 @@
         <header>
             
             <nav>
-                <img class="logo" src="./recursos/icons/LOGO VECTOR1 .png" alt="logo-pagina">
-                <ul class="nav-menu">
-                    <li> 
-                        <a class="items-nav" href="#">Acerca</a>
-                    </li>
-                    <li>
-                        <a class="items-nav" href="#">Proyectos</a>
-                    </li>
-                    <li>
-                        <a class="items-nav" href="#">Avances</a>
-                    </li>
-                    <li>
-                        <a class="items-nav" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+                <section class="contenedor nav">
+                    <div class="logo">
+                        <a href="#"> <img src="./recursos/icons/LOGO VECTOR1 .png" alt="" />
+                         </a>
+                         </div>
+    
+                <div class="enlaces-header" >
+               
+                    <a href="#">Acerca</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Avances</a>
+                    <a href="#">Contacto</a>
+                    
+                  </div>
+    
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+        </section>
         </header>
 
 
@@ -119,13 +126,13 @@
                     <h3 class="tituloZurdo"><strong> </strong></h3>
                     <div class="contenido-opciones">
                         <div class="laterales-parrafo">
-                            <div class="items-par" data-aos="fade-right"
-                            data-aos-offset="300" data-aos-easing="ease-in-sine"><p>Podemos diseñar tus ideas, llevarlas a otro nivel,
+                            <div class="items-par"><p>Podemos diseñar tus ideas, llevarlas a otro nivel,
                                 descubre nuestros diseños y contactanos!
                             </p></div> 
+                           
                             </div>
                 
-                        <img src="./recursos/img/space002.png" class="mapa"  >
+                        <img src="./recursos/img/space002.png" class="mapa" >
                     </div>
                             
                 </section>
@@ -191,10 +198,14 @@
                     </div>
           
                 </footer>
-            
+    
+            </body>
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
                 <script src="./js/main.js"></script>
+
+                <!--fontawsome-->
+                <script src="https://kit.fontawesome.com/fb3a7dfea7.js" crossorigin="anonymous"></script>
 
             <!--AOS -->
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -202,7 +213,7 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-    </body>
+    
 
 
 </html>

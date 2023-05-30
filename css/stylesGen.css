@@ -21,92 +21,117 @@ header{
   background: #303952;
   top: 0;
   z-index: 80;
-  transition: ease-in-out 0.6s ;
+  
   
 }
 
 /*navegacion*/
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor1{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 60px 0;
+  
+}
+
+
+
+/* HEADER */
 
 nav{
+  width: 100%;
+  height: 100px;
+  background: gray;
   
-  font-size: 20px;
-  display: flex; 
-  justify-content: space-between;
-  align-items:center ;
-  padding: 10px ;
-  height: 50px;
-  width: 82%;
+  position: fixed ;
+  /* TOP Y Z INDEX PARA FIJAR LA NAV EN HEADER*/ 
+  top: 0;
+  z-index: 100;
+
+  /* transition: ease-in-out 0.5s ; AQUI LA TRANSICION SE GUARDA HASTA UBICAR EÑ JS DESPLAZAMIENTO */ 
+  transition: ease-in-out 0.5s ;
   
 }
 
-nav .logo {
-  width: 45px;
-   padding-left: 20% ; 
-}
-
-header .nav-menu{
-  justify-content: right;
-}
-
-
-li .items-nav{
-  color: #000;
-  text-decoration:dotted;
-  list-style: none;
-  padding: 10px;
-
-}
-
-/*ESTILIZANDO NAV*/
-
-nav > ul{  
+.nav{
   display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  align-items: center ;
+  padding: 0 40px;
+  
+   
+}
+
+
+
+.nav .logo{
+  height: 100px;
+  
+}   
+
+.nav .logo img{
+  height: 85px;
+  margin: 10px;
+  
+ 
+}
+
+.enlaces-header{
+  font-weight: 300;
+  transition: ease-in-out 0.5s ;
+      
+}
+
+.nav .enlaces-header a{
+  color: rgb(53, 53, 53);
+  font-size: 26px;
+  text-decoration: none;
+  margin-left: 20px;
   
 }
 
-nav ul.nav-menu{
-  flex: 1;
-  margin-left: 2% ;
-
-}
-
-/*HOVER NAV */
-
-
-
-nav li{
-  display: inline;
-  margin: 0 0 0 15px ;
-  padding: 5px 5px;
-  background-color: rgb(146, 146, 146);
-  border-radius: 5px;
-  transition: 1s all;
-  cursor: pointer;    
-}
-
-nav a{
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  font-size: 18px ;
-  text-decoration: none;
-
-}
-
-nav a:hover{
-  color: #fff;
-  text-decoration: underline;
-
-}
-
-nav li:hover{
-  background: #ee2b2b;
-  transform: scale(1.1);
+.nav .enlaces-header>a:hover{
+ 
+  color:#df333fe2 ;
+  transition: color .3s;
+    
 }
 
 
 
+/*----------------------------------------------------HAMB-----------------------------------------------------------*/
 
+.hamburger {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  z-index: 100;
+  /* UN CURSOR POINTER PARA ACTIVAR LA MANO*/
+  cursor: pointer;
+  display: flex;
+  /* transition: color 0.5s ease-in; */
+  }
+  
+  .hamburger > i{
+  font-size: 25px;
+  line-height: 80px;
+  
+  }
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
 /* VIDEO BACK*/
 
 .container-uno{
@@ -368,6 +393,7 @@ body .container-swim{
   width: 80%;
   margin: 0 auto;
   
+  
 }
 
 .contenido-opciones{
@@ -490,6 +516,7 @@ ul .items {
   display: flex;
   border-radius: 30px;
   margin: 50px 162px;
+  
 }
 
 .contenido-opciones1{
@@ -611,6 +638,13 @@ footer{
 /*----------------------------------------------------------------------*/
 /*MEDIA*/
 
+@media screen and  (max-width:2200px){
+  .swiper{
+    margin: 300px auto 0 0;
+    width: 80%;
+    
+  }
+}
 
 @media screen and  (max-width:1200px){
  
@@ -618,6 +652,28 @@ footer{
   .container-uno, .container2, .ejemplo-video, .overlay {
     width: 100%;
     margin: auto 2px;
+}
+
+.nav .enlaces-header a{
+  font-size: 18px;
+
+}
+
+
+.contenedor{
+  width: 100%;
+}
+
+nav{ 
+  width: 100%;
+  
+}
+
+.container3{
+  /*background: #fff;*/
+  /*   background-color: #ccc; */  
+  padding: 0 auto;
+  margin: 30px 30px;
 }
 
 .content{
@@ -696,10 +752,10 @@ video{
 
 
 .swiper{
-  width: 80%;
-  height: 80%;
-  margin: 120px auto 5px auto;
+  margin: 200px auto 0 0;
 }
+
+
 
 .swiper-wrapper{
 
@@ -726,10 +782,16 @@ video{
 .container3{
   /*background: #fff;*/
   /*   background-color: #ccc; */  
-  margin: 10px auto;
   display: flex;
   border-radius: 30px;
+  margin: 30px 70px;
+  width: 80%;
+  height: 30%;
+  overflow: auto;
 }
+
+
+
 
 .contenido-opciones{
   
@@ -768,44 +830,180 @@ ul .items {
 }
 
 
-.lateral-twitter{
-  width: 315px;
-  padding: 4050px 350px;
-}
-
-
-
 
 .twitter-container{
   margin: 10px auto;
   
 }
 
+.lateral-twitter{
+  width: 70%;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+
+.twitter-timeline{
+  margin-top: 10px
 }
 
 
+
+}
+
+
+@media screen and (max-width:950){
+  
+  .informacion-redes{
+    border: 2px solid green;
+  }
+
+  .container3{
+    margin: 30px 70px;
+  }
+
+  .lateral-twitter{
+    width: 385px;
+    padding: 631px 180px;
+  }
+
+  .twitter-timeline{
+    margin-top: -728px
+  }
+
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
 @media screen and  (max-width:700px){
  
-  .twitter-timeline{
+  .titulo{
+    font-size: 35px;
+}
+
+h1{
+font-size: 40px;
+}
+
+header{ 
+  width: 100%;
+  
+}
+
+
+
+.contenedor{
+  width: 100%;
+}
+
+
+
+.contenido-header{
+height: 650px;
+}
+
+.nav{
+padding: 0 10px ;
+}
+
+.contenido-header>img{
+width: 300px;
+
+}
+
+.enlaces-header{
+/*display: none;*/
+position: fixed;
+
+    background: rgb(240,240,240);
+    background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(207,207,207,1) 100%);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /*border: 1px solid black;*/
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    /*COVER EN CIRCULO DEL MENU*/
+    clip-path: circle(0% at 87% 6%)
+}
+/*OTRA CLASE PARA DEFINIR APERTURA DEL MENU */
+.nav .menudos{
+-webkit-clip-path: circle(133.8% at 100% 0);        
+clip-path: circle(150% at 100% 0);
+}
+
+.nav .menudos a{
+width: 60%;
+align-items: center;
+padding: 0 90px;
+
+background: rgb(240,240,240);
+background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(229,229,229,1) 91%);
+
+}
+
+.nav .menudos >a:hover{
+background: rgb(0 0 0 / 83%);
+transition: 0.5s;
+
+
+}
+
+
+.nav .enlaces-header a{
+    color: rgb(6, 3, 9);
+    font-size: 30px;
+           
+}
+
+
+.nav .enlaces-header>a:hover{
+color:#df333fe2 ;
+transition: color 0.5s;   
+}
+
+.hamburger{
+display: block;
+}
+
+
+.swiper{
+  width: 70%;
+  
+}
+
+
+
+
+.twitter-timeline{
     width: 180px;
 
 }
 .mapa{
-  width: 300px;
+  width: 215px;
   margin: 0 auto
 }
 
+
+
 video{
-  transform: scale(1.6,1.6)translate(-258px, 27px);
+  transform: scale(1.6,1.6)translate(-334px, 116px);
 
 }
 
 .informacion-redes{
   padding: 20px 0 ;
-  width: 100%;
+  width: 90%;
+  
+  align-items:center ;
 }
 
 .container3{
+  margin: 30px 70px;
   padding: 0px 2px;
 }
 
@@ -815,9 +1013,13 @@ video{
   padding: 10px 10px;
 }
 
+ul .items{
+  margin: 15px 2px;
+}
 
 
 .items p{
+  margin: 4px auto;
   margin: 10px 10px;
 }
 

@@ -1,4 +1,5 @@
 
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 50,
@@ -14,7 +15,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-  AOS.init();
+
 
 
 
@@ -44,7 +45,7 @@ var swiper = new Swiper(".mySwiper", {
 
    /* AOS.init();*/
 
-
+   AOS.init();
 
 
 let ubicacionPrincipal = window.pageYOffset
@@ -88,11 +89,11 @@ document.querySelectorAll(".hamburger ")[0].addEventListener("click", function()
 
 */
 
-/*
-let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
+
+let enlacesHeader = document.querySelectorAll(".nav-menu")[0];
 let semaforo = true;
 
-document.querySelectorAll(".hamburger ")[0].addEventListener("click", function(){
+document.querySelectorAll(".hamburger")[0].addEventListener("click", function(){
     if(semaforo){
         document.querySelectorAll(".hamburger")[0].style.color = "#c23c55";
         semaforo= false;
@@ -101,9 +102,9 @@ document.querySelectorAll(".hamburger ")[0].addEventListener("click", function()
         semaforo= true;
     }
     
-    enlacesHeader.classList.toggle("menudos")
+    enlacesHeader.classList.toggle(".menudos")
 })
-*/
+
 
 
 
