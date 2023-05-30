@@ -9,7 +9,7 @@ body{
 main{
    
   background-color: rgb(21, 14, 61);
-  ;
+  
 }
 
 
@@ -304,9 +304,7 @@ body .container-swim{
     
   }
 
-  .swiper-wrapper{
   
-  }
 
   .swiper-slide {
     text-align: center;
@@ -753,6 +751,7 @@ ul .items {
 
 .mapa{
   width: 700px;
+  margin: 0 auto
 }
 
 .laterales-parrafo {
@@ -793,6 +792,7 @@ ul .items {
 }
 .mapa{
   width: 300px;
+  margin: 0 auto
 }
 
 video{
