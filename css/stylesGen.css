@@ -384,7 +384,7 @@ body .container-swim{
       /*width: calc(50% - (10px*2));*/
       width: 300px;
       /* box-shadow: -10px 10px 20px 15px #000;*/
-              
+      animation: ease-in animat 2s;         
 
 }
 
@@ -400,7 +400,7 @@ body .container-swim{
 .tituloZurdo{
   
   text-align: center;
-  margin: 50px auto;
+  margin: 0px 0;
   letter-spacing: 60px;
   
 }
@@ -453,6 +453,7 @@ ul .items {
   display: inline-block;
   vertical-align: top;
   width: 40%;
+  
   padding: 20px 140px;
   margin-right: 1%;
       
@@ -476,7 +477,8 @@ ul .items {
   color:white;
   margin: 30px 20px;
   overflow: auto;
-  font-size: 22px;
+  font-size: 25px;
+  overflow: auto;
 }
 
 
@@ -485,12 +487,11 @@ ul .items {
 .container3{
   /*background: #fff;*/
   /*   background-color: #ccc; */  
-  padding: 0.6%  7% 0.6% 8%;
+  padding: 0 auto;
   background: rgba(255, 255, 255, 0.062) ;
-  margin: 40px 60px;
   display: flex;
   border-radius: 30px;
-  
+  margin: 50px 162px;
 }
 
 .contenido-opciones1{
@@ -512,7 +513,7 @@ ul .items {
 
 
 .informacion-redes{
-  border: 1px solid rgba(245, 222, 179, 0);
+  border: 1px solid rgba(121, 101, 65, 0);
     padding: 30px 0 ;
 }
 
@@ -520,7 +521,7 @@ ul .items {
   display: flex;
   vertical-align: top;
   width: 40%;
-  padding: 30px 80px;
+  padding: 10px 50px;
   
 }
 
@@ -546,7 +547,7 @@ footer{
 
 .partFooter h4{
   color: #000;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 30px;
   
@@ -747,8 +748,11 @@ ul .items {
   background-color: #ececec09 ;
   
   
-  
-   
+}
+
+
+.mapa{
+  width: 700px;
 }
 
 .laterales-parrafo {
@@ -767,6 +771,7 @@ ul .items {
 
 .lateral-twitter{
   width: 315px;
+  padding: 4050px 350px;
 }
 
 
@@ -785,6 +790,9 @@ ul .items {
   .twitter-timeline{
     width: 180px;
 
+}
+.mapa{
+  width: 300px;
 }
 
 video{

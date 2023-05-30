@@ -13,6 +13,12 @@ var swiper = new Swiper(".mySwiper", {
     
   });
 
+
+  AOS.init();
+
+
+
+
 /*ANTIGUO SWIMPER*/
 /*
 var swiper = new Swiper(".mySwiper", {
