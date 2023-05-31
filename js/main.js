@@ -1,8 +1,9 @@
 
 
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 20,
     freeMode: true,
     slideShadows: false,
     pagination: {
@@ -15,10 +16,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-
-
-
-
+  AOS.init();
 
 /*ANTIGUO SWIMPER*/
 /*
@@ -45,7 +43,7 @@ var swiper = new Swiper(".mySwiper", {
 
    /* AOS.init();*/
 
-   AOS.init();
+   
 
 
 
@@ -56,20 +54,6 @@ window.addEventListener("scroll", function(){
 
 })
 * */
-
-let ubicacionPrincipal = window.pageYOffset
-
-
-window.addEventListener("scroll", function(){
-    let desplazamientoActual= window.pageYOffset;
-    if(ubicacionPrincipal >= desplazamientoActual){
-        this.document.getElementsByTagName("nav") [0].style.top = "0px"
-    } else{
-        document.getElementsByTagName("nav")[0].style.top = "-100px"
-    }
-    ubicacionPrincipal= desplazamientoActual;
-
-})
 
 
 
@@ -85,24 +69,6 @@ document.querySelectorAll(".hamburger ")[0].addEventListener("click", function()
 })
 
 */
-
-
-
-
-let enlacesHeader = document.querySelectorAll("enlaces-header")[0];
-let semaforo = true;
-
-document.querySelectorAll(".hamburger ")[0].addEventListener("click", function(){
-    if(semaforo){
-        document.querySelectorAll(".hamburger")[0].style.color = "#c23c55";
-        semaforo= false;
-    }else{
-        document.querySelectorAll(".hamburger")[0].style.color = "#000";
-        semaforo= true;
-    }
-    
-    enlacesHeader.classList.toggle(".menudos")
-})
 
 
 
