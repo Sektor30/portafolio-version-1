@@ -48,7 +48,6 @@ var swiper = new Swiper(".mySwiper", {
    AOS.init();
 
 
-let ubicacionPrincipal = window.pageYOffset
 
 /** SOLICITUD DE UBICACION DE LA PAGINA - EMITIDA EN CONSOLE */
 /*
@@ -58,22 +57,20 @@ window.addEventListener("scroll", function(){
 })
 * */
 
-
-
+let ubicacionPrincipal = window.pageYOffset
 
 
 window.addEventListener("scroll", function(){
     let desplazamientoActual= window.pageYOffset;
     if(ubicacionPrincipal >= desplazamientoActual){
-        this.document.getElementsByTagName("header") [0].style.top = "0px"
-        this.document.getElementsByTagName("header") [0].style.backgroundColor = "#303952"
+        this.document.getElementsByTagName("nav") [0].style.top = "0px"
     } else{
-        document.getElementsByTagName("header")[0].style.top = "-100px"
-        document.getElementsByTagName("header")[0].style.backgroundColor = "#000"
+        document.getElementsByTagName("nav")[0].style.top = "-100px"
     }
     ubicacionPrincipal= desplazamientoActual;
 
 })
+
 
 
 // MENU 
@@ -90,10 +87,12 @@ document.querySelectorAll(".hamburger ")[0].addEventListener("click", function()
 */
 
 
-let enlacesHeader = document.querySelectorAll(".nav-menu")[0];
+
+
+let enlacesHeader = document.querySelectorAll("enlaces-header")[0];
 let semaforo = true;
 
-document.querySelectorAll(".hamburger")[0].addEventListener("click", function(){
+document.querySelectorAll(".hamburger ")[0].addEventListener("click", function(){
     if(semaforo){
         document.querySelectorAll(".hamburger")[0].style.color = "#c23c55";
         semaforo= false;
@@ -104,7 +103,6 @@ document.querySelectorAll(".hamburger")[0].addEventListener("click", function(){
     
     enlacesHeader.classList.toggle(".menudos")
 })
-
 
 
 

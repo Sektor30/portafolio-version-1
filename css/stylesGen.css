@@ -12,7 +12,7 @@ main{
   
 }
 
-
+/*
 header{
   border: 1px solid black;
   width: 100%;
@@ -20,10 +20,9 @@ header{
   position: fixed;
   background: #303952;
   top: 0;
-  z-index: 80;
-  
-  
+  z-index: 80; 
 }
+*/
 
 /*navegacion*/
 .contenedor{
@@ -49,7 +48,7 @@ header{
 nav{
   width: 100%;
   height: 100px;
-  background: gray;
+  background: rgb(39, 20, 134);
   
   position: fixed ;
   /* TOP Y Z INDEX PARA FIJAR LA NAV EN HEADER*/ 
@@ -118,7 +117,7 @@ nav{
   z-index: 100;
   /* UN CURSOR POINTER PARA ACTIVAR LA MANO*/
   cursor: pointer;
-  display: flex;
+  display: none;
   /* transition: color 0.5s ease-in; */
   }
   
@@ -644,14 +643,18 @@ footer{
     width: 80%;
     
   }
+ 
+  
+ 
+
 }
 
 @media screen and  (max-width:1200px){
- 
+  
  
   .container-uno, .container2, .ejemplo-video, .overlay {
     width: 100%;
-    margin: auto 2px;
+    margin: 2px auto;
 }
 
 .nav .enlaces-header a{
@@ -659,6 +662,9 @@ footer{
 
 }
 
+.enlaces-header{
+  margin: 0 10%;
+}
 
 .contenedor{
   width: 100%;
@@ -702,6 +708,16 @@ video{
   padding: 10% auto 0 auto;
   margin: 10% auto 0 auto;
 }
+
+.boton{
+  width: 100%;
+}
+
+.boton .btn1{
+  margin: 20px 58px;
+}
+
+
 
 
 .container-flex{
@@ -846,6 +862,23 @@ ul .items {
   margin-top: 10px
 }
 
+/*FOOTER BREAK*/
+
+footer{
+  justify-content:space-evenly;
+
+
+}
+
+.partFooter{
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.partFooter > img{
+  width: 30%;
+  
+}
 
 
 }
@@ -890,6 +923,64 @@ header{
   
 }
 
+.enlaces-header{
+  /*display: none;*/
+  position: fixed;
+  
+      background: rgb(240,240,240);
+      background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(207,207,207,1) 100%);
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      /*border: 1px solid black;*/
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-top: 65px;
+      /*COVER EN CIRCULO DEL MENU*/
+      clip-path: circle(0% at 87% 6%)
+  }
+  /*OTRA CLASE PARA DEFINIR APERTURA DEL MENU */
+  .nav .menudos{
+  -webkit-clip-path: circle(133.8% at 100% 0);        
+  clip-path: circle(150% at 100% 0);
+  }
+  
+  .nav .menudos a{
+  width: 60%;
+  align-items: center;
+  padding: 0 90px;
+  
+  background: rgb(240,240,240);
+  background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(229,229,229,1) 91%);
+  
+  }
+  
+  .nav .menudos >a:hover{
+  background: rgb(0 0 0 / 83%);
+  transition: 0.5s;
+  
+  
+  }
+  
+  
+  .nav .enlaces-header a{
+      color: rgb(6, 3, 9);
+      font-size: 30px;
+             
+  }
+  
+  
+  .nav .enlaces-header>a:hover{
+  color:#df333fe2 ;
+  transition: color 0.5s;   
+  }
+  
+  .hamburger{
+  display: block;
+  }
 
 
 .contenedor{
@@ -911,65 +1002,10 @@ width: 300px;
 
 }
 
-.enlaces-header{
-/*display: none;*/
-position: fixed;
 
-    background: rgb(240,240,240);
-    background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(207,207,207,1) 100%);
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    /*border: 1px solid black;*/
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 65px;
-    /*COVER EN CIRCULO DEL MENU*/
-    clip-path: circle(0% at 87% 6%)
+.boton .btn1{
+  margin: 20px 13px;
 }
-/*OTRA CLASE PARA DEFINIR APERTURA DEL MENU */
-.nav .menudos{
--webkit-clip-path: circle(133.8% at 100% 0);        
-clip-path: circle(150% at 100% 0);
-}
-
-.nav .menudos a{
-width: 60%;
-align-items: center;
-padding: 0 90px;
-
-background: rgb(240,240,240);
-background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(229,229,229,1) 91%);
-
-}
-
-.nav .menudos >a:hover{
-background: rgb(0 0 0 / 83%);
-transition: 0.5s;
-
-
-}
-
-
-.nav .enlaces-header a{
-    color: rgb(6, 3, 9);
-    font-size: 30px;
-           
-}
-
-
-.nav .enlaces-header>a:hover{
-color:#df333fe2 ;
-transition: color 0.5s;   
-}
-
-.hamburger{
-display: block;
-}
-
 
 .swiper{
   width: 70%;
@@ -1003,8 +1039,8 @@ video{
 }
 
 .container3{
-  margin: 30px 70px;
-  padding: 0px 2px;
+  margin: 30px 60px;
+  padding: 2px 5px;
 }
 
 
@@ -1033,7 +1069,10 @@ ul .items{
   width: 301px
 }
 
-
+.partFooter{
+  width: 95%;
+  margin-bottom: 40px;
+}
 
 
 
