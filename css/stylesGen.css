@@ -391,7 +391,7 @@ body .container-swim{
   background: rgb(21, 14, 61) ;
   width: 80%;
   margin: 0 auto;
-  
+  display: flex;
   
 }
 
@@ -399,6 +399,9 @@ body .container-swim{
   
   display: flex;
   flex-wrap: wrap;  
+  width: 80%;
+  margin: 0 auto;
+  
   
 }
 
@@ -474,11 +477,9 @@ ul .items {
 .laterales-parrafo {
   display: inline-block;
   vertical-align: top;
-  width: 40%;
-  
-  padding: 20px 140px;
   margin-right: 1%;
-      
+  width: 50%;
+  padding: 20px 25px;
 }
 
 
@@ -515,7 +516,8 @@ ul .items {
   background: rgba(255, 255, 255, 0.062) ;
   display: flex;
   border-radius: 30px;
-  margin: 10px 275px 51px 301px;
+  
+  margin: 0 20%;
   
 }
 
@@ -525,7 +527,7 @@ ul .items {
   flex-wrap: wrap; 
   align-items: center;
   justify-content: space-between;
-  
+  margin: 0 auto;  
   
 }
 
@@ -533,7 +535,7 @@ ul .items {
 .twitter-timeline{
   padding: 2px 1px ;
   /*width: calc(50% - (10px*2));*/
-  width: 370px;
+  width: 340px;
   height: 350px;
   overflow: auto;
 }
@@ -705,9 +707,9 @@ nav{
 
 
 video{
-  width: 140vh;
-  height: 20vh;
-  transform: scale(1.6,1.6)translate(115px, 27px);
+  width: 165vh;
+  height: 110vh;
+  transform: scale(1.4,1.4)translate(-254px, 2px);
   
 }
 .container-uno{
@@ -835,7 +837,8 @@ ul .items {
 
 
 .mapa{
-  width: 700px;
+  width: 470px;
+  
   margin: 0 auto
 }
 
@@ -1100,7 +1103,6 @@ ul .items{
   }
 
   .twitter-timeline{
-    border: 5px solid purple;
     margin: 0 auto;
     width: 100%;
   }
