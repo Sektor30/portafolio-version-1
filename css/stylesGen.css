@@ -1,3 +1,9 @@
+:root{
+  --font: arial,sans-serif;
+}
+
+
+
 body{
      font-size: 1rem;
      line-height: 1.5;
@@ -92,18 +98,27 @@ nav{
 }
 
 .nav .enlaces-header a{
-  color: rgb(53, 53, 53);
+  color: #ccc;
   font-size: 26px;
   text-decoration: none;
   margin-left: 20px;
-  
+  font-family: var(--font);
+  border-radius: 9px;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 5px 10px;
 }
 
 .nav .enlaces-header>a:hover{
  
-  color:#df333fe2 ;
+  color:#ccc;
   transition: color .3s;
-    
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 
@@ -124,7 +139,7 @@ nav{
   .hamburger > i{
   font-size: 25px;
   line-height: 80px;
-  
+  color: white;
   }
 
 
@@ -263,7 +278,10 @@ animation:backwards  mimove 3s;
 }
 
 .btn1{
-  background: #ee2b2b;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: var(--font);
   color: #fff;
   font-size: 35px;  
   text-decoration: none;
@@ -272,7 +290,12 @@ animation:backwards  mimove 3s;
   
 }
 
+.boton >a:hover{
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 
 .boton .btn1{
   
@@ -424,7 +447,7 @@ body .container-swim{
 
 
 .tituloZurdo{
-  
+    
   text-align: center;
   margin: 0px 0;
   letter-spacing: 60px;
@@ -486,10 +509,12 @@ ul .items {
 
 .items-par{
   font-size: 120%;
+  font-family: var(--font);
   padding: 15px 0 5px 10px;
   /* font-weight: bold;*/
   background-color: #ececec09 ;
   border: none;
+  font-family: var(--font);
   border-radius: 19px;
   transition: 1s all;
   cursor: pointer;
@@ -499,6 +524,7 @@ ul .items {
 
 .items-par p{
   text-decoration: none;
+  font-family: var(--font);
   color:white;
   margin: 30px 20px;
   overflow: auto;
@@ -547,13 +573,42 @@ ul .items {
     padding: 30px 0 ;
 }
 
-.lateral-twitter{
-  display: flex;
-  vertical-align: top;
-  width: 40%;
-  padding: 10px 50px;
-  
+
+
+.lateral-twitter{    
+    padding: 10px auto;
+    align-items: center;
+    background-color: #ececec09;
+    border-radius: 10px;
+    align-items: center;
+    width: 40%; 
+    height: 70%;
+    justify-content: center;  
+    padding: 10px auto;
+    align-items: center;
+    background-color: #ececec09; 
+    border-radius: 10px;
+    margin: 0 10px;
+    gap: 10px;
+    
+    
 }
+
+.lateral-twitter .social-media > a{
+  margin:5px 5px ;
+  padding: 15px 2px;
+  color: white;  
+ 
+}
+
+
+
+
+.lateral-twitter .items{
+  font-family: var(--font);
+  font-size: 25px;
+}
+
 
 
 
@@ -709,7 +764,7 @@ nav{
 video{
   width: 165vh;
   height: 110vh;
-  transform: scale(1.4,1.4)translate(-254px, 2px);
+  transform: scale(1.4,1.4)translate(14px, 74px);
   
 }
 .container-uno{
@@ -754,7 +809,8 @@ video{
 .img-promocional img{
   
   width: 0;
-  margin: 6px auto;
+  margin: -21px auto;
+  
 }
 
 
@@ -773,7 +829,10 @@ video{
 
 /*comienza swiper*/
 
-
+.cuadro{
+  margin: 8% 241px 0;
+  width: 70%;
+}
 
 
 .swiper{
@@ -818,11 +877,7 @@ video{
 
 
 
-.contenido-opciones{
-  
-  flex-direction: column;
-  padding: 0 auto;
-}
+
 
 ul .items {
   font-size: 120%;
@@ -863,10 +918,20 @@ ul .items {
 }
 
 .lateral-twitter{
-  width: 70%;
-  margin: 0 auto;
-  padding: 0px 40px;
+  
+  width: 53%;
+  height: 25%;
+    
+    padding: 10px auto;
+    align-items: center;
+    background-color: #ececec09;
+    border-radius: 10px;
+    margin: 0 auto;
+
 }
+
+
+
 
 .twitter-timeline{
   margin-top: 10px
@@ -896,6 +961,11 @@ footer{
 
 @media screen and (max-width:950){
   
+  
+  .cuadro{
+    width: 70%;
+  }
+
   .informacion-redes{
     border: 2px solid green;
   }
@@ -936,10 +1006,12 @@ header{
 
 .enlaces-header{
   /*display: none;*/
-  position: fixed;
-  
-      background: rgb(240,240,240);
-      background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(207,207,207,1) 100%);
+      position: fixed;
+      
+      background: #8E2DE2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
       top: 0;
       right: 0;
       width: 100%;
@@ -959,12 +1031,14 @@ header{
   .nav .menudos{
   -webkit-clip-path: circle(133.8% at 100% 0);        
   clip-path: circle(150% at 100% 0);
+  
   }
   
   .nav .menudos a{
   width: 50%;
   align-items: center;
   
+  margin-bottom: 10%;
   padding: 0 44px;
   background: rgb(240,240,240);
   background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(229,229,229,1) 91%);
@@ -987,7 +1061,7 @@ header{
   
   
   .nav .enlaces-header>a:hover{
-  color:#df333fe2 ;
+  color:#ccc ;
   transition: color 0.5s;   
   }
   
@@ -1017,7 +1091,12 @@ width: 300px;
 
 
 .boton .btn1{
-  margin: 20px 13px;
+  margin: 20px auto;
+}
+
+
+.cuadro{
+  width: 70%;
 }
 
 .swiper{
@@ -1040,7 +1119,7 @@ width: 300px;
 
 
 video{
-  transform: scale(1.6,1.6)translate(-334px, 116px);
+  transform: scale(1.6,1.6)translate(-39px, -33px);
 
 }
 
@@ -1056,6 +1135,9 @@ video{
   padding: 2px 5px;
 }
 
+.cuadro{
+  width: 90%;
+}
 
 .lateral-twitter{
   width: 100%;
