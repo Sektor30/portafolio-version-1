@@ -581,8 +581,8 @@ ul .items {
     background-color: #ececec09;
     border-radius: 10px;
     align-items: center;
-    width: 40%; 
-    height: 70%;
+    width: 30%; 
+    height: 95%;
     justify-content: center;  
     padding: 10px auto;
     align-items: center;
@@ -591,13 +591,13 @@ ul .items {
     margin: 0 10px;
     gap: 10px;
     
-    
 }
 
 .lateral-twitter .social-media > a{
   margin:5px 5px ;
-  padding: 15px 2px;
+  padding: 5px 2px 0px 30px ;
   color: white;  
+  
  
 }
 
