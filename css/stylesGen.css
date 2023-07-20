@@ -308,7 +308,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
 
 
 .img-base{
-  width: 80%;
+  width: 70%;
   padding: 0 0 10% 15%;
   animation: ease-in animat 2s; 
  }
