@@ -533,6 +533,12 @@ ul .items {
 }
 
 
+
+.infoImagen{
+  padding-left:13% ;
+}
+
+
 /* cierre container ejemplo*/
 
 .container3{
@@ -910,6 +916,11 @@ ul .items {
   margin: 10px auto;
 }
 
+/* provisional*/
+
+.infoImagen{
+  padding-left:14% ;
+}
 
 
 .twitter-container{
